@@ -38,6 +38,8 @@ fetch(`http://localhost:3000/api/products/${id}`)
 const button = document.getElementById("addToCart");
 button.addEventListener("click", addToCart);
 
+
+//cette fonction sert a ajouter un element au panier
 function addToCart(e) {
 
   const colorValue = document.querySelector("#colors");

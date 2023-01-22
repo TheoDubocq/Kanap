@@ -124,9 +124,10 @@ function deleteItem(e) {
 }
 
 function updatePrice(e) {
+   //Ici on met  a jour la valeur de l'element ciblé
   let updateButtun = e.target;
   let update = updateButtun.closest(".cart__item");
-  //Ici on met  a jour la valeur de l'element ciblé
+
   updateAll(update, "update", e.target.value);
 }
 
@@ -258,7 +259,7 @@ function postCommand(e) {
     valide = false;
   }
   if (valide != true) {
-    alert(`Il y a une érreur au niveau de votre saisie`);
+    alert(`erreur de saisie`);
     return false;
   }
   contact = {
